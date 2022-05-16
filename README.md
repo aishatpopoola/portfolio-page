@@ -70,9 +70,9 @@ npm run html-validator
 
 ## 👤 Author
 
-- Github: [@author](https://github.com/author)
-- Twitter: [@author](https://twitter.com/author)
-- Linkedin: [@author](https://www.linkedin.com/in/author/)
+- Github: [@author](https://github.com/aishatpopoola)
+- Twitter: [@author](https://twitter.com/PopoolaAishat1)
+- Linkedin: [@author](https://www.linkedin.com/in/aishat-popoola/)
 
 ## 🤝 Contributing
 
