@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+.mask-alpha {
+  mask-mode: alpha;
+}
+
 /* ========= layout ============ */
 
 .container {

@@ -3,7 +3,6 @@
 //     navToggle = document.querySelector('#nav_toggle'),
 //     navClose = document.querySelector('#nav_close')
 
-
 // /*===== MENU SHOW =====*/
 // /* Validate if constant exists */
 
@@ -13,7 +12,6 @@
 // if (navToggle) {
 //     navToggle.addEventListener('click', navToggler)
 // }
-
 
 // /*===== MENU HIDDEN =====*/
 // /* Validate if constant exists */
