@@ -1,0 +1,29 @@
+.home_content {
+  grid-template-columns: max-content 1fr 1fr;
+}
+
+.home_data {
+  grid-column: initial;
+}
+
+.home_img {
+  order: 1;
+  justify-self: center;
+}
+
+.skills_container,
+.portfolio_content,
+.contact_container,
+.footer_container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about_container {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.qualification_section {
+  display: grid;
+  grid-template-columns: 0.6fr;
+  justify-content: center;
+}
