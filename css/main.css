@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-.mask-alpha {
+.mask_alpha {
   mask-mode: alpha;
 }
 
@@ -55,31 +55,45 @@
   align-items: center;
 }
 
-.nav-logo,
-.nav-toggle {
+.nav_logo,
+.nav_toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
 
-.nav-logo:hover {
+.nav_logo:hover {
   color: var(--first-color);
 }
 
-.nav-toggle {
+.nav_toggle {
   font-size: 1.1rem;
   cursor: pointer;
 }
 
-.nav-toggle:hover {
+.nav_toggle:hover {
   color: var(--first-color);
 }
 
-.nav-list {
+@media screen and (max-width: 767px) {
+  .nav_menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+}
+
+.nav_list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-.nav-link {
+.nav_link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,15 +102,15 @@
   font-weight: var(--font-medium);
 }
 
-.nav-link:hover {
+.nav_link:hover {
   color: var(--first-color);
 }
 
-.nav-icon {
+.nav_icon {
   font-size: 1.2rem;
 }
 
-.nav-close {
+.nav_close {
   position: absolute;
   right: 1.2rem;
   bottom: 0.5rem;
@@ -105,12 +119,12 @@
   color: var(--first-color);
 }
 
-.nav-close:hover {
+.nav_close:hover {
   color: var(--first-color-alt);
 }
 
 /* show menu */
-.show-menu {
+.show_menu {
   bottom: 0;
 }
 
@@ -154,7 +168,7 @@
   fill: var(--first-color);
 }
 
-.home-blob-img {
+.home_blob_img {
   width: 100%;
 }
 
@@ -181,27 +195,27 @@
   display: none;
 }
 
-.home_scroll-button {
+.home_scroll_button {
   color: var(--first-color);
   transition: 0.3s;
 }
 
-.home_scroll-button:hover {
+.home_scroll_button:hover {
   transform: translateY(0.25rem);
 }
 
-.home_scroll-mouse {
+.home_scroll_mouse {
   font-size: 2rem;
 }
 
-.home_scroll-name {
+.home_scroll_name {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
 }
 
-.home_scroll-arrow {
+.home_scroll_arrow {
   font-size: 1.25rem;
 }
 
@@ -538,7 +552,7 @@
   transition: 0.3s;
 }
 
-.services_modal-content {
+.services_modal_content {
   position: relative;
   background-color: var(--container-color);
   padding: 1.5rem;

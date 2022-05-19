@@ -26,3 +26,16 @@
 .qualification_data {
   gap: 0.5rem;
 }
+
+.services_container {
+  grid-template-columns: max-content;
+  justify-content: center;
+}
+
+.services_content {
+  padding-right: 3.5rem;
+}
+
+.services_modal {
+  padding: 0 0.5rem;
+}

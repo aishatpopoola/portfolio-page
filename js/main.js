@@ -7,7 +7,7 @@
 // /* Validate if constant exists */
 
 // const navToggler = () => {
-//     navMenu.classList.add('show-menu')
+//     navMenu.classList.add('show_menu')
 // }
 // if (navToggle) {
 //     navToggle.addEventListener('click', navToggler)
@@ -16,7 +16,7 @@
 // /*===== MENU HIDDEN =====*/
 // /* Validate if constant exists */
 // const navCloser = () => {
-//     navMenu.classList.remove('show-menu')
+//     navMenu.classList.remove('show_menu')
 // }
 // if (navClose) {
 //     navClose.addEventListener('click', navCloser)

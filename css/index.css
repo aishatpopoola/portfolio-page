@@ -1,4 +1,5 @@
 @import './reset.css';
 @import './main.css';
+@import 'min_mobile.css' screen and (min-width: 768px);
 @import 'mobile_screen.css' screen and (max-width: 350px);
 @import 'medium_screen.css' screen and (max-width: 767px);
