@@ -44,6 +44,7 @@
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  padding: 0;
 }
 
 /* ==================== nav =============== */
@@ -500,11 +501,11 @@
   margin-bottom: var(--mb-1);
 }
 
-/* .services_title {
+.services_title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
-} */
+}
 
 .services_button {
   font-size: var(--small-font-size);

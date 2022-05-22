@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-Page</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href=" https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
   </head>
@@ -26,8 +30,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#portfolio" class="nav_link active-link">
+              <a href="#portfolio" class="nav_link">
                 <i class="uil uil-scenery nav_icon"></i>
+                Portfolio
               </a>
             </li>
             <li class="nav-item">
@@ -178,7 +183,7 @@
         </div>
       </section>
       <!-- =================== skillls ================= -->
-      <section>
+      <section id="skills">
         <h2 class="section_title">skills</h2>
         <span class="section_subtitle">my technical level</span>
         <div class="skills_container container grid">
@@ -629,7 +634,7 @@
               <i class="uil uil-phone contact_icon"></i>
               <div>
                 <h3 class="contact_title">Call me</h3>
-                <span class="contact_subtitle">+2348091092729</span>
+                <span class="contact_subtitle"></span>
               </div>
             </div>
 
@@ -645,7 +650,7 @@
               <i class="uil uil-map-marker contact_icon"></i>
               <div>
                 <h3 class="contact_title">location</h3>
-                <span class="contact_subtitle">7, Buhari street Ogudu, Lagos state.Nigeria</span>
+                <span class="contact_subtitle">Lagos state.Nigeria.</span>
               </div>
             </div>
           </div>
@@ -738,7 +743,29 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
+    
 
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/swiper-bundle.min.js">
+
+        let swiper = new Swiper('.swiper-container', {
+            cssMode: true,
+            loop: true,
+
+            navigation: {
+                nextE1: '.swiper-button-next',
+                prevE1: '.swiper-button-prev',
+
+            },
+            pagination: {
+                e1: '.swiper-pagination',
+                clickable: true,
+            },
+
+        });
+
+    </script> -->
+    <!--==================== MAIN JS ====================-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
