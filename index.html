@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-Page</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href=" https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
   </head>
@@ -16,35 +15,68 @@
         <div class="nav_menu" id="nav_menu">
           <ul class="nav_list grid">
             <li class="nav-item">
-              <a href="#home" class="nav_link "> <i class="uil uil-estate nav_icon"></i> home </a>
+              <a
+                href="#home"
+                class="nav_link  toggler"
+                data-toggle="nav_menu"
+                data-class-to-toggle="show_menu"
+              >
+                <i class="uil uil-estate nav_icon"></i> home
+              </a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav_link "> <i class="uil uil-user nav_icon"></i> about </a>
+              <a
+                href="#about"
+                class="nav_link  toggler"
+                data-toggle="nav_menu"
+                data-class-to-toggle="show_menu"
+              >
+                <i class="uil uil-user nav_icon"></i> about
+              </a>
             </li>
             <li class="nav-item">
-              <a href="#skills" class="nav_link">
+              <a
+                href="#skills"
+                class="nav_link toggler"
+                data-toggle="nav_menu"
+                data-class-to-toggle="show_menu"
+              >
                 <i class="uil uil-file-alt nav_icon"></i> skills
               </a>
             </li>
             <li class="nav-item">
-              <a href="#portfolio" class="nav_link">
+              <a
+                href="#portfolio"
+                class="nav_link toggler"
+                data-toggle="nav_menu"
+                data-class-to-toggle="show_menu"
+              >
                 <i class="uil uil-scenery nav_icon"></i>
                 Portfolio
               </a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav_link ">
+              <a
+                href="#contact"
+                class="nav_link  toggler"
+                data-toggle="nav_menu"
+                data-class-to-toggle="show_menu"
+              >
                 <i class="uil uil-message nav_icon"></i> contact
               </a>
             </li>
           </ul>
-          <i class="uil uil-times nav_close" id="nav_close"></i>
+          <i
+            class="uil uil-times nav_close toggler"
+            data-toggle="nav_menu"
+            data-class-to-toggle="show_menu"
+          ></i>
         </div>
         <div class="nav_btn">
           <!-- ============== theme-btn ========= -->
           <i class="uil uil-moon change_theme" id="theme-button"></i>
 
-          <div class="nav_toggle" id="nav_toggle">
+          <div class="nav_toggle toggler" data-toggle="nav_menu" data-class-to-toggle="show_menu">
             <i class="uil uil-apps"></i>
           </div>
         </div>
@@ -122,7 +154,7 @@
               <p class="home_description">
                 High level experience in web design and development producing quality work.
               </p>
-              <a href="#contact" class="button button--flex">
+              <a href="#contact" class="button button-flex">
                 Contact me<i class="uil uil-message button_icon"></i>
               </a>
             </div>
@@ -172,7 +204,7 @@
               </div>
             </div>
             <div class="about_buttons">
-              <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+              <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button-flex">
                 Download cv <i class="uil uil-download-alt button_icon"></i>
               </a>
             </div>
@@ -184,8 +216,13 @@
         <h2 class="section_title">skills</h2>
         <span class="section_subtitle">my technical level</span>
         <div class="skills_container container grid">
-          <div class="skills_content skills_open">
-            <div class="skills_header">
+          <div class="skills_content skills_open" id="skills_content_1">
+            <div
+              class="skills_header toggler"
+              data-toggle="skills_content_1"
+              data-class-to-toggle="skills_close"
+              data-second-class-to-toggle="skills_open"
+            >
               <i class="uil uil-brackets-curly skills_icon"></i>
               <div>
                 <h2 class="skills_titles">Frontend developer</h2>
@@ -234,8 +271,13 @@
           </div>
 
           <!-- ================= skills 3 -->
-          <div class="skills_content skills_close">
-            <div class="skills_header">
+          <div class="skills_content skills_close" id="skills_content_2">
+            <div
+              class="skills_header toggler"
+              data-toggle="skills_content_2"
+              data-class-to-toggle="skills_open"
+              data-second-class-to-toggle="skills_close"
+            >
               <i class="uil uil-swatchbook  skills_icon"></i>
               <div>
                 <h2 class="skills_titles">SOFTWARE</h2>
@@ -285,8 +327,13 @@
             </div>
           </div>
           <!-- skills 4 -->
-          <div class="skills_content skills_close">
-            <div class="skills_header">
+          <div class="skills_content skills_close" id="skills_content_3">
+            <div
+              class="skills_header toggler"
+              data-toggle="skills_content_3"
+              data-class-to-toggle="skills_open"
+              data-second-class-to-toggle="skills_close"
+            >
               <i class="uil uil-swatchbook  skills_icon"></i>
               <div>
                 <h2 class="skills_titles">DESIGNER</h2>
@@ -333,13 +380,13 @@
         <div class="qualification_container container">
           <div class="qualification_tabs">
             <div
-              class="qualification_button button--flex qualification_active"
+              class="qualification_button button-flex qualification_active"
               data-target="#education"
             >
               <i class="uil uil-graduation-cap qualification_icon"></i>
               Education
             </div>
-            <div class="qualification_button button--flex" data-target="#work">
+            <div class="qualification_button button-flex" data-target="#work">
               <i class="uil uil-briefcase-alt qualification_icon"></i>
               Work
             </div>
@@ -476,34 +523,34 @@
                 developer
               </h3>
             </div>
-            <span class="button button--flex button--small button--link services_button">
+            <span class="button button-flex button-small button-link services_button">
               view more
               <i class="uil uil-arrow-right button_icon"></i>
             </span>
             <div class="services_modal">
               <div class="services_modal_content">
-                <h4 class="services_modal-title">
+                <h4 class="services_modal_title">
                   frontend <br />
                   developer
                 </h4>
                 <i class="uil uil-times services_modal-close"></i>
-                <ul class="services_modal-services grid">
-                  <li class="services_modal-service ">
+                <ul class="services_modal_services grid">
+                  <li class="services_modal_service ">
                     <i class="uil uil-check-circle services_modal-icon"></i>
                     <p>I develop the user interface</p>
                   </li>
 
-                  <li class="services_modal-service ">
+                  <li class="services_modal_service ">
                     <i class="uil uil-check-circle services_modal-icon"></i>
                     <p>webpage development</p>
                   </li>
 
-                  <li class="services_modal-service ">
+                  <li class="services_modal_service ">
                     <i class="uil uil-check-circle services_modal-icon"></i>
                     <p>i create ux element interaction</p>
                   </li>
 
-                  <li class="services_modal-service ">
+                  <li class="services_modal_service ">
                     <i class="uil uil-check-circle services_modal-icon"></i>
                     <p>I position your company brand</p>
                   </li>
@@ -521,34 +568,34 @@
                 designer
               </h3>
             </div>
-            <span class="button button--flex button--small button--link services_button">
+            <span class="button button-flex button-small button-link services_button">
               view more
               <i class="uil uil-arrow-right button_icon"></i>
             </span>
             <div class="services_modal">
               <div class="services_modal_content">
-                <h4 class="services_modal-title">
+                <h4 class="services_modal_title">
                   branding <br />
                   designer
                 </h4>
                 <i class="uil uil-times services_modal-close"></i>
-                <ul class="services_modal-services grid">
-                  <li class="services_modal-service ">
+                <ul class="services_modal_services grid">
+                  <li class="services_modal_service ">
                     <i class="uil uil-check-circle services_modal-icon"></i>
                     <p>I develop the user interface</p>
                   </li>
 
-                  <li class="services_modal-service ">
+                  <li class="services_modal_service ">
                     <i class="uil uil-check-circle services_modal-icon"></i>
                     <p>webpage development</p>
                   </li>
 
-                  <li class="services_modal-service ">
+                  <li class="services_modal_service ">
                     <i class="uil uil-check-circle services_modal-icon"></i>
                     <p>i create ux element interaction</p>
                   </li>
 
-                  <li class="services_modal-service ">
+                  <li class="services_modal_service ">
                     <i class="uil uil-check-circle services_modal-icon"></i>
                     <p>I position your company brand</p>
                   </li>
@@ -573,7 +620,7 @@
                 <p class="portfolio_description">
                   website adaptable to all devices with ui components and animated interactions
                 </p>
-                <a href="#" class="button button--flex button--small portfolio_button">
+                <a href="#" class="button button-flex button-small portfolio_button">
                   Demo
                   <i class="uil uil-arrow-right button_icon"></i>
                 </a>
@@ -588,7 +635,7 @@
                 <p class="portfolio_description">
                   website adaptable to all devices with ui components and animated interactions
                 </p>
-                <a href="#" class="button button--flex button--small portfolio_button">
+                <a href="#" class="button button-flex button-small portfolio_button">
                   Demo
                   <i class="uil uil-arrow-right button_icon"></i>
                 </a>
@@ -602,7 +649,7 @@
                 <p class="portfolio_description">
                   website adaptable to all devices with ui components and animated interactions
                 </p>
-                <a href="#" class="button button--flex button--small portfolio_button">
+                <a href="#" class="button button-flex button-small portfolio_button">
                   Demo
                   <i class="uil uil-arrow-right button_icon"></i>
                 </a>
@@ -699,7 +746,7 @@
               ></textarea>
             </div>
             <div>
-              <button type="submit" class="button button--flex">
+              <button type="submit" class="button button-flex">
                 Send Message
                 <i class="uil uil-message button_icon"></i>
               </button>
@@ -764,7 +811,6 @@
     </a>
 
     <!--==================== MAIN JS ====================-->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

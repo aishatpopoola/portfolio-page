@@ -90,7 +90,7 @@
 .home_social-icon,
 .home_scroll_button,
 .button--white,
-.button--link,
+.button-link,
 .skills_icon,
 .skills_arrow,
 .qualification_button:hover,
@@ -122,11 +122,6 @@
 
 .nav_close:hover {
   color: var(--first-color-alt);
-}
-
-/* show menu */
-.show_menu {
-  bottom: 0;
 }
 
 .scroll-header {
@@ -249,21 +244,21 @@
   background-color: #fff;
 }
 
-.button--flex {
+.button-flex {
   display: inline-flex;
   align-items: center;
 }
 
-.button--small {
+.button-small {
   padding: 0.75rem 1rem;
 }
 
-.button--link {
+.button-link {
   padding: 0;
   background-color: transparent;
 }
 
-.button--link:hover {
+.button-link:hover {
   background-color: transparent;
   color: var(--first-color-alt);
 }
@@ -540,15 +535,15 @@
   border-radius: 0.5rem;
 }
 
-.services_modal-services {
+.services_modal_services {
   row-gap: 1rem;
 }
 
-.services_modal-service {
+.services_modal_service {
   display: flex;
 }
 
-.services_modal-title {
+.services_modal_title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
