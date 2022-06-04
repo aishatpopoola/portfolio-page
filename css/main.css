@@ -96,7 +96,7 @@
 .qualification_button:hover,
 .qualification_button.qualification_active,
 .services_icon,
-.services_modal-close,
+.services_modal_close,
 .services_modal-icon,
 .swiper-porfolio-icon,
 .contact_icon {
@@ -374,7 +374,7 @@
 }
 
 .skills_js {
-  width: 60%;
+  width: 80%;
 }
 
 .skills_react {
@@ -549,7 +549,7 @@
   margin-bottom: var(--mb-1-5);
 }
 
-.services_modal-close {
+.services_modal_close {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -559,6 +559,12 @@
 
 .services_modal-icon {
   margin-right: var(--mb-0-25);
+}
+
+/* Active Modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* ==================== PORTFOLIO ==================== */

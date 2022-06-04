@@ -252,7 +252,7 @@
               <div class="skills_data">
                 <div class="skills_titles">
                   <h3 class="skills_name">JAVASCRIPT</h3>
-                  <span class="skills_number">60%</span>
+                  <span class="skills_number">80%</span>
                 </div>
                 <div class="skills_bar">
                   <span class="skills_percentage skills_js"></span>
@@ -270,17 +270,70 @@
             </div>
           </div>
 
+            <!-- ================= skills 2 ------->
+            <div class="skills_content skills_close" id="skills_content_2">
+              <div class="skills_header toggler"
+              data-toggle="skills_content_2"
+              data-class-to-toggle="skills_open"
+              data-second-class-to-toggle="skills_close"
+              >
+                  <i class="uil uil-server-network skills_icon"></i>
+                  <div>
+                      <h1 class="skills_titles">Backend developer</h1>
+                      <span class="skills_subtitle">More than 2 years</span>
+                  </div>
+                  <i class="uil uil-angle-down skills_arrow"></i>
+              </div>
+              <div class="skills_list grid">
+                  <div class="skills_data">
+                      <div class="skills_titles">
+                          <h3 class="skills_name">PHP </h3>
+                          <span class="skills_number">80%</span>
+                      </div>
+                      <div class="skills_bar">
+                          <span class="skills_percentage skills_php"></span>
+                      </div>
+                  </div>
+                  <div class="skills_data">
+                      <div class="skills_titles">
+                          <h3 class="skills_name">NODE JS</h3>
+                          <span class="skills_number">87%</span>
+                      </div>
+                      <div class="skills_bar">
+                          <span class="skills_percentage skills_node"></span>
+                      </div>
+                  </div>
+                  <div class="skills_data">
+                      <div class="skills_titles">
+                          <h3 class="skills_name">FIREBASE </h3>
+                          <span class="skills_number">90%</span>
+                      </div>
+                      <div class="skills_bar">
+                          <span class="skills_percentage skills_firebase"></span>
+                      </div>
+                  </div>
+                  <div class="skills_data">
+                      <div class="skills_titles">
+                          <h3 class="skills_name">PHYTHON </h3>
+                          <span class="skills_number">55%</span>
+                      </div>
+                      <div class="skills_bar">
+                          <span class="skills_percentage skills_phython"></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
           <!-- ================= skills 3 -->
-          <div class="skills_content skills_close" id="skills_content_2">
+          <div class="skills_content skills_close" id="skills_content_3">
             <div
               class="skills_header toggler"
-              data-toggle="skills_content_2"
+              data-toggle="skills_content_3"
               data-class-to-toggle="skills_open"
               data-second-class-to-toggle="skills_close"
             >
               <i class="uil uil-swatchbook  skills_icon"></i>
               <div>
-                <h2 class="skills_titles">SOFTWARE</h2>
+                <h2 class="skills_titles">Tools</h2>
                 <span class="skills_subtitle">More than 1 years</span>
               </div>
               <i class="uil uil-angle-down skills_arrow"></i>
@@ -327,16 +380,16 @@
             </div>
           </div>
           <!-- skills 4 -->
-          <div class="skills_content skills_close" id="skills_content_3">
+          <div class="skills_content skills_close" id="skills_content_4">
             <div
               class="skills_header toggler"
-              data-toggle="skills_content_3"
+              data-toggle="skills_content_4"
               data-class-to-toggle="skills_open"
               data-second-class-to-toggle="skills_close"
             >
               <i class="uil uil-swatchbook  skills_icon"></i>
               <div>
-                <h2 class="skills_titles">DESIGNER</h2>
+                <h2 class="skills_titles">Soft-skills</h2>
                 <span class="skills_subtitle">More than 5 years</span>
               </div>
               <i class="uil uil-angle-down skills_arrow"></i>
@@ -344,7 +397,7 @@
             <div class="skills_list grid">
               <div class="skills_data">
                 <div class="skills_titles">
-                  <h3 class="skills_name">FIGMA</h3>
+                  <h3 class="skills_name">CREATIVITY</h3>
                   <span class="skills_number">90%</span>
                 </div>
                 <div class="skills_bar">
@@ -353,7 +406,7 @@
               </div>
               <div class="skills_data">
                 <div class="skills_titles">
-                  <h3 class="skills_name">SKETCH</h3>
+                  <h3 class="skills_name">COLLABORATION</h3>
                   <span class="skills_number">85%</span>
                 </div>
                 <div class="skills_bar">
@@ -362,7 +415,7 @@
               </div>
               <div class="skills_data">
                 <div class="skills_titles">
-                  <h3 class="skills_name">PHOTOSHOP</h3>
+                  <h3 class="skills_name">ATTENTIVE TO INSTRUCTIONS</h3>
                   <span class="skills_number">85%</span>
                 </div>
                 <div class="skills_bar">
@@ -380,20 +433,27 @@
         <div class="qualification_container container">
           <div class="qualification_tabs">
             <div
-              class="qualification_button button-flex qualification_active"
-              data-target="#education"
+              class="qualification_button button-flex toggler"
+              data-targ="#education"
+              data-toggle="education"
+              data-second-element-to-toggle="work"
+              data-class-to-toggle="qualification_active"
             >
-              <i class="uil uil-graduation-cap qualification_icon"></i>
+              <i class="uil uil-graduation-cap qualification_icon "></i>
               Education
             </div>
-            <div class="qualification_button button-flex" data-target="#work">
-              <i class="uil uil-briefcase-alt qualification_icon"></i>
+            <div class="qualification_button button-flex toggler" data-target="#work"
+              data-toggle="work"
+              data-second-element-to-toggle="education"
+              data-class-to-toggle="qualification_active"
+            >
+              <i class="uil uil-briefcase-alt qualification_icon "></i>
               Work
             </div>
           </div>
           <div class="qualification_sections">
             <!-- ===============Qualification content 1-->
-            <div class="qualification_content qualification_active" data-content id="education">
+            <div class="qualification_content qualification_active " data-content id="education">
               <!-- ========== Qualification  1-->
               <div class="qualification_data">
                 <div>
@@ -523,17 +583,26 @@
                 developer
               </h3>
             </div>
-            <span class="button button-flex button-small button-link services_button">
+            <button
+              type="button"
+              id="service_1"
+              class="button button-flex button-small button-link services_button toggler"
+              data-toggle="services_modal_1"
+              data-class-to-toggle="active-modal"
+            >
               view more
               <i class="uil uil-arrow-right button_icon"></i>
-            </span>
-            <div class="services_modal">
+            </button>
+            <div class="services_modal" id="services_modal_1">
               <div class="services_modal_content">
                 <h4 class="services_modal_title">
                   frontend <br />
                   developer
                 </h4>
-                <i class="uil uil-times services_modal-close"></i>
+                <i class="uil uil-times services_modal_close toggler"
+                  data-toggle="services_modal_1"
+                  data-class-to-toggle="active-modal"
+                ></i>
                 <ul class="services_modal_services grid">
                   <li class="services_modal_service ">
                     <i class="uil uil-check-circle services_modal-icon"></i>
@@ -568,17 +637,26 @@
                 designer
               </h3>
             </div>
-            <span class="button button-flex button-small button-link services_button">
+            <button
+              type="button"
+              class="button button-flex button-small button-link services_button toggler"
+              data-toggle="services_modal_2"
+              data-class-to-toggle="active-modal"
+              id="service_2"
+            >
               view more
               <i class="uil uil-arrow-right button_icon"></i>
-            </span>
-            <div class="services_modal">
+            </button>
+            <div class="services_modal " id="services_modal_2">
               <div class="services_modal_content">
                 <h4 class="services_modal_title">
                   branding <br />
                   designer
                 </h4>
-                <i class="uil uil-times services_modal-close"></i>
+                <i class="uil uil-times services_modal_close toggler"
+                 data-toggle="services_modal_2"
+                 data-class-to-toggle="active-modal"
+                ></i>
                 <ul class="services_modal_services grid">
                   <li class="services_modal_service ">
                     <i class="uil uil-check-circle services_modal-icon"></i>
