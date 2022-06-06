@@ -90,13 +90,13 @@
 .home_social-icon,
 .home_scroll_button,
 .button--white,
-.button--link,
+/* .button-link, */
 .skills_icon,
 .skills_arrow,
 .qualification_button:hover,
 .qualification_button.qualification_active,
 .services_icon,
-.services_modal-close,
+.services_modal_close,
 .services_modal-icon,
 .swiper-porfolio-icon,
 .contact_icon {
@@ -122,11 +122,6 @@
 
 .nav_close:hover {
   color: var(--first-color-alt);
-}
-
-/* show menu */
-.show_menu {
-  bottom: 0;
 }
 
 .scroll-header {
@@ -249,21 +244,22 @@
   background-color: #fff;
 }
 
-.button--flex {
+.button-flex {
   display: inline-flex;
   align-items: center;
 }
 
-.button--small {
+.button-small {
   padding: 0.75rem 1rem;
 }
 
-.button--link {
+.button-link {
   padding: 0;
-  background-color: transparent;
 }
 
-.button--link:hover {
+.button-link,
+.button-link:hover {
+  padding: 0;
   background-color: transparent;
   color: var(--first-color-alt);
 }
@@ -379,11 +375,27 @@
 }
 
 .skills_js {
-  width: 60%;
+  width: 80%;
 }
 
 .skills_react {
   width: 85%;
+}
+
+.skills_php {
+  width: 80%;
+}
+
+.skills_node {
+  width: 70%;
+}
+
+.skills_firebase {
+  width: 90%;
+}
+
+.skills_phython {
+  width: 65%;
 }
 
 .skills_GITHUB {
@@ -510,6 +522,7 @@
 .services_button {
   font-size: var(--small-font-size);
   cursor: pointer;
+  border: none;
 }
 
 .services_button:hover .button_icon {
@@ -540,21 +553,21 @@
   border-radius: 0.5rem;
 }
 
-.services_modal-services {
+.services_modal_services {
   row-gap: 1rem;
 }
 
-.services_modal-service {
+.services_modal_service {
   display: flex;
 }
 
-.services_modal-title {
+.services_modal_title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
 }
 
-.services_modal-close {
+.services_modal_close {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -566,9 +579,17 @@
   margin-right: var(--mb-0-25);
 }
 
+/* Active Modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* ==================== PORTFOLIO ==================== */
 .portfolio_container {
-  overflow: initial;
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: relative;
 }
 
 .portfolio_content {
