@@ -1,5 +1,19 @@
+
+const swiper = new Swiper('.swiper-container', {
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 const toggler = e => {
-  e.preventDefault();
   const thisElement = e.currentTarget;
   const {
     dataset: { toggle, classToToggle, secondClassToToggle, secondElementToToggle },
@@ -21,32 +35,62 @@ document.querySelectorAll('.toggler').forEach(togglerItem => {
   togglerItem.addEventListener('click', toggler);
 });
 
+/*==================== scroll API toggler ====================*/
 
+const getScrollTogglerParams = [
+  {
+    id: "header",
+    scrollPosition: 80,
+    classToToggle: "scroll-header"
+  },
+  {
+    id: "scroll-up",
+    scrollPosition: 560,
+    classToToggle: "show-scroll"
+  }
+];
 
-
-
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/
-const scrollHeader = () =>{
-  console.log(scrollHeader);
-  const nav = document.getElementById('header')
-  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-  if(this.scrollY >= 80) {
-    nav.classList.add('scroll-header');
-  }  else {
-    nav.classList.remove('scroll-header')
+const scrollToggler = (e) =>{
+  for (let i = 0; i < getScrollTogglerParams.length; i += 1) {
+    const { id, scrollPosition, classToToggle } =  getScrollTogglerParams[i];
+    const elem = document.querySelector(`#${id}`); //'#' + id
+    if (e.target.scrollingElement.scrollTop >= scrollPosition) {
+      elem.classList.add(classToToggle);
+    }  else { 
+      elem.classList.remove(classToToggle)
+    }
   }
 }
-window.addEventListener('scroll', scrollHeader)
 
-/*==================== SHOW SCROLL UP ====================*/
-const scrollUp = () =>{
-  const scrollUp = document.getElementById('scroll-up');
-  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  if(this.scrollY >= 560) {
-      scrollUp.classList.add('show-scroll')
-   } else { scrollUp.classList.remove('show-scroll')
-  }
+window.addEventListener('scroll', scrollToggler)
+
+
+/*==================== DARK LIGHT THEME ====================*/ 
+const themeButton = document.querySelector('#theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'uil-sun'
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
 
-window.addEventListener('scroll', scrollUp)
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})

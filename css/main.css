@@ -90,7 +90,7 @@
 .home_social-icon,
 .home_scroll_button,
 .button--white,
-.button-link,
+/* .button-link, */
 .skills_icon,
 .skills_arrow,
 .qualification_button:hover,
@@ -255,10 +255,11 @@
 
 .button-link {
   padding: 0;
-  background-color: transparent;
 }
 
+.button-link,
 .button-link:hover {
+  padding: 0;
   background-color: transparent;
   color: var(--first-color-alt);
 }
@@ -379,6 +380,22 @@
 
 .skills_react {
   width: 85%;
+}
+
+.skills_php {
+  width: 80%;
+}
+
+.skills_node {
+  width: 70%;
+}
+
+.skills_firebase {
+  width: 90%;
+}
+
+.skills_phython {
+  width: 65%;
 }
 
 .skills_GITHUB {
@@ -505,6 +522,7 @@
 .services_button {
   font-size: var(--small-font-size);
   cursor: pointer;
+  border: none;
 }
 
 .services_button:hover .button_icon {
@@ -569,7 +587,9 @@
 
 /* ==================== PORTFOLIO ==================== */
 .portfolio_container {
-  overflow: initial;
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: relative;
 }
 
 .portfolio_content {

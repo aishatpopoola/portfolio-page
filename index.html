@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href=" https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
   </head>
@@ -27,7 +28,7 @@
             <li class="nav-item">
               <a
                 href="#about"
-                class="nav_link  toggler"
+                class="nav_link toggler"
                 data-toggle="nav_menu"
                 data-class-to-toggle="show_menu"
               >
@@ -58,7 +59,7 @@
             <li class="nav-item">
               <a
                 href="#contact"
-                class="nav_link  toggler"
+                class="nav_link toggler"
                 data-toggle="nav_menu"
                 data-class-to-toggle="show_menu"
               >
@@ -270,58 +271,59 @@
             </div>
           </div>
 
-            <!-- ================= skills 2 ------->
-            <div class="skills_content skills_close" id="skills_content_2">
-              <div class="skills_header toggler"
+          <!-- ================= skills 2 ------->
+          <div class="skills_content skills_close" id="skills_content_2">
+            <div
+              class="skills_header toggler"
               data-toggle="skills_content_2"
               data-class-to-toggle="skills_open"
               data-second-class-to-toggle="skills_close"
-              >
-                  <i class="uil uil-server-network skills_icon"></i>
-                  <div>
-                      <h1 class="skills_titles">Backend developer</h1>
-                      <span class="skills_subtitle">More than 2 years</span>
-                  </div>
-                  <i class="uil uil-angle-down skills_arrow"></i>
+            >
+              <i class="uil uil-server-network skills_icon"></i>
+              <div>
+                <h1 class="skills_titles">Backend developer</h1>
+                <span class="skills_subtitle">More than 2 years</span>
               </div>
-              <div class="skills_list grid">
-                  <div class="skills_data">
-                      <div class="skills_titles">
-                          <h3 class="skills_name">PHP </h3>
-                          <span class="skills_number">80%</span>
-                      </div>
-                      <div class="skills_bar">
-                          <span class="skills_percentage skills_php"></span>
-                      </div>
-                  </div>
-                  <div class="skills_data">
-                      <div class="skills_titles">
-                          <h3 class="skills_name">NODE JS</h3>
-                          <span class="skills_number">87%</span>
-                      </div>
-                      <div class="skills_bar">
-                          <span class="skills_percentage skills_node"></span>
-                      </div>
-                  </div>
-                  <div class="skills_data">
-                      <div class="skills_titles">
-                          <h3 class="skills_name">FIREBASE </h3>
-                          <span class="skills_number">90%</span>
-                      </div>
-                      <div class="skills_bar">
-                          <span class="skills_percentage skills_firebase"></span>
-                      </div>
-                  </div>
-                  <div class="skills_data">
-                      <div class="skills_titles">
-                          <h3 class="skills_name">PHYTHON </h3>
-                          <span class="skills_number">55%</span>
-                      </div>
-                      <div class="skills_bar">
-                          <span class="skills_percentage skills_phython"></span>
-                      </div>
-                  </div>
+              <i class="uil uil-angle-down skills_arrow"></i>
+            </div>
+            <div class="skills_list grid">
+              <div class="skills_data">
+                <div class="skills_titles">
+                  <h3 class="skills_name">PHP</h3>
+                  <span class="skills_number">80%</span>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_php"></span>
+                </div>
               </div>
+              <div class="skills_data">
+                <div class="skills_titles">
+                  <h3 class="skills_name">NODE JS</h3>
+                  <span class="skills_number">87%</span>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_node"></span>
+                </div>
+              </div>
+              <div class="skills_data">
+                <div class="skills_titles">
+                  <h3 class="skills_name">FIREBASE</h3>
+                  <span class="skills_number">90%</span>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_firebase"></span>
+                </div>
+              </div>
+              <div class="skills_data">
+                <div class="skills_titles">
+                  <h3 class="skills_name">PHYTHON</h3>
+                  <span class="skills_number">65%</span>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_phython"></span>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- ================= skills 3 -->
           <div class="skills_content skills_close" id="skills_content_3">
@@ -442,7 +444,9 @@
               <i class="uil uil-graduation-cap qualification_icon "></i>
               Education
             </div>
-            <div class="qualification_button button-flex toggler" data-target="#work"
+            <div
+              class="qualification_button button-flex toggler"
+              data-target="#work"
               data-toggle="work"
               data-second-element-to-toggle="education"
               data-class-to-toggle="qualification_active"
@@ -599,7 +603,8 @@
                   frontend <br />
                   developer
                 </h4>
-                <i class="uil uil-times services_modal_close toggler"
+                <i
+                  class="uil uil-times services_modal_close toggler"
                   data-toggle="services_modal_1"
                   data-class-to-toggle="active-modal"
                 ></i>
@@ -653,9 +658,10 @@
                   branding <br />
                   designer
                 </h4>
-                <i class="uil uil-times services_modal_close toggler"
-                 data-toggle="services_modal_2"
-                 data-class-to-toggle="active-modal"
+                <i
+                  class="uil uil-times services_modal_close toggler"
+                  data-toggle="services_modal_2"
+                  data-class-to-toggle="active-modal"
                 ></i>
                 <ul class="services_modal_services grid">
                   <li class="services_modal_service ">
@@ -885,10 +891,11 @@
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup_icon"></i>
+      <i class="uil uil-arrow-up scrollup_icon"> </i>
     </a>
 
     <!--==================== MAIN JS ====================-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
